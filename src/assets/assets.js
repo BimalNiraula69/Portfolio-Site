@@ -8,7 +8,7 @@ import post from './post.png';
 import responsible from './responsible.png';
 import resume from './resume.png';
 
-export const assets = {
+const assets ={
     bimal,
     contact_us,
     dragon,
@@ -17,5 +17,7 @@ export const assets = {
     portfolio,
     post,
     responsible,
-    resume
-}
+    resume,
+};
+
+export default assets

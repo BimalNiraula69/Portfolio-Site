@@ -1,10 +1,10 @@
-import Home from './components/Home'
 import MainContent from './components/MainContent'
+import NavBar from './components/NavBar'
 
 function App() {
   return(
     <div className="flex">
-      <Home/>
+      <NavBar/>
       <MainContent/>
     </div>
   )
