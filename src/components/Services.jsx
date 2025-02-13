@@ -22,7 +22,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className='flex flex-col items-center justify-center relative w-screen h-screen bg-[#F5F3FF]'>
+    <div className='flex flex-col items-center justify-center relative w-screen min-h-screen bg-[#F5F3FF] p-4'>
       <style jsx>{`
         .underline-custom {
             position: relative;
@@ -38,38 +38,38 @@ const Services = () => {
             background-color: #149ddd; /* Change the color of the line */
         }`}
       </style>
-      <h2 className="text-2xl font-semibold absolute top-5"><span className="underline-custom">Servic</span>es</h2>
-      <div className="text-white flex flex-col justify-center items-center h-full">
-      {/* Grid Layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl px-4">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="relative bg-gray-900 p-6 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center"
-          >
-            {/* Title */}
-            <h2 className="text-2xl font-bold text-lime-400">{service.title}</h2>
+      <h2 className="text-2xl font-semibold mb-8"><span className="underline-custom">Servic</span>es</h2>
+      <div className="text-white flex flex-col justify-center items-center w-full">
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="relative bg-gray-900 p-6 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center"
+            >
+              {/* Title */}
+              <h2 className="text-2xl font-bold text-lime-400">{service.title}</h2>
 
-            {/* Image */}
-            <div className="w-40 h-40 my-6">
-              <img
-                src={service.image}
-                alt={service.title}
-                className="w-full h-full object-contain"
-              />
+              {/* Image */}
+              <div className="w-40 h-40 my-6">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-contain"
+                />
+              </div>
+
+              {/* Description */}
+              <p className="text-gray-400 text-sm">{service.description}</p>
+
+              {/* Arrow Indicator */}
+              <div className="absolute bottom-2 right-4 text-lime-400 text-xl">
+                →
+              </div>
             </div>
-
-            {/* Description */}
-            <p className="text-gray-400 text-sm">{service.description}</p>
-
-            {/* Arrow Indicator */}
-            <div className="absolute bottom-2 right-4 text-lime-400 text-xl">
-              →
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   )
 }
