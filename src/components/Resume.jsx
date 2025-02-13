@@ -2,7 +2,7 @@ import React from 'react'
 
 const Resume = () => {
   return (
-    <div className='bg-gray-200 relative w-screen h-auto'>
+    <div className='bg-[#F5F3FF] relative w-screen h-auto'>
         <style jsx>{`
           @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 

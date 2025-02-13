@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Services = () => {
   const services = [
@@ -22,7 +22,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className='flex flex-col items-center justify-center relative w-screen h-screen bg-gray-300'>
+    <div className='flex flex-col items-center justify-center relative w-screen h-screen bg-[#F5F3FF]'>
       <style jsx>{`
         .underline-custom {
             position: relative;
@@ -41,7 +41,7 @@ const Services = () => {
       <h2 className="text-2xl font-semibold absolute top-5"><span className="underline-custom">Servic</span>es</h2>
       <div className="text-white flex flex-col justify-center items-center h-full">
       {/* Grid Layout */}
-      <div className="grid md:grid-cols-3 gap-6 w-full max-w-6xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl px-4">
         {services.map((service, index) => (
           <div
             key={index}
@@ -74,4 +74,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Services;

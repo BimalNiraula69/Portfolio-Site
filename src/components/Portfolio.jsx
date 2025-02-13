@@ -7,7 +7,6 @@ const Portfolio = () => {
     { src: "/image1.jpg", title: "First slide label", text: "Some representative placeholder content for the first slide." },
     { src: "/image2.jpg", title: "Second slide label", text: "Some representative placeholder content for the second slide." },
     { src: "/image3.jpg", title: "Third slide label", text: "Some representative placeholder content for the third slide." },
-  
   ];
 
   const Carousel = () => {
@@ -22,14 +21,14 @@ const Portfolio = () => {
     };
 
     return (
-      <div className="w-screen h-screen bg-red-100">
-      <h2 className="flex justify-center text-4xl font-bold text-gray-800 mb-8 relative top-5">
+      <div className="w-screen h-screen bg-[#F5F3FF]">
+        <h2 className="flex justify-center text-4xl font-bold text-gray-800 mb-8 relative top-5">
           <span className="relative">
             Port
             <span className="absolute left-0 bottom-[-5px] w-full h-1 bg-blue-500"></span>
           </span>folio
         </h2>
-        <div className="flex justify-center flex-col content-center ml-40 relative w-full max-w-5xl h-130 overflow-hidden rounded-lg shadow-lg bg-white">
+        <div className="flex justify-center flex-col content-center relative w-full max-w-5xl h-130 overflow-hidden rounded-lg shadow-lg bg-white mx-auto px-4 sm:px-6 lg:px-8">
           {/* Slides */}
           {images.map((image, index) => (
             <motion.div
@@ -40,8 +39,8 @@ const Portfolio = () => {
               className={`absolute inset-0 w-full h-full ${index === current ? "block" : "hidden"}`}
             >
               <img src={image.src} alt={image.title} className="w-full h-full object-cover rounded-lg" />
-              <div className="flex flex-col justify-center align-center ml-80 mb-6 absolute bottom-5 left-5">
-                <h5 className="ml-27 text-lg font-bold">{image.title}</h5>
+              <div className="flex flex-col justify-center align-center absolute bottom-5 left-5 sm:left-10 lg:left-20">
+                <h5 className="text-lg font-bold">{image.title}</h5>
                 <p className="text-sm">{image.text}</p>
               </div>
             </motion.div>
@@ -74,7 +73,7 @@ const Portfolio = () => {
             <FaChevronRight className="w-5 h-5" />
           </button>
         </div>
-        </div>
+      </div>
     );
   };
 
