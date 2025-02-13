@@ -22,7 +22,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className='flex relative w-screen h-screen bg-gray-300'>
+    <div className='flex flex-col items-center justify-center relative w-screen h-screen bg-gray-300'>
       <style jsx>{`
         .underline-custom {
             position: relative;
@@ -38,8 +38,8 @@ const Services = () => {
             background-color: #149ddd; /* Change the color of the line */
         }`}
       </style>
-      <h2 className="mt-5 ml-4 text-2xl font-semibold"><span class="underline-custom">Servic</span>es</h2>
-      <div className="min-h-screen text-white flex flex-col justify-center items-center p-6">
+      <h2 className="text-2xl font-semibold absolute top-5"><span className="underline-custom">Servic</span>es</h2>
+      <div className="text-white flex flex-col justify-center items-center h-full">
       {/* Grid Layout */}
       <div className="grid md:grid-cols-3 gap-6 w-full max-w-6xl">
         {services.map((service, index) => (

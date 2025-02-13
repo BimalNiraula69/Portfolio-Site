@@ -3,7 +3,7 @@ import { FaBehance, FaLinkedin, FaTwitter, FaDribbble } from "react-icons/fa";
 
 const Contact = () => {
   return (
-      <div className="min-h-screen w-full flex items-center justify-center bg-gray-900 px-4">
+      <div className="min-h-screen w-full bg-gray-900 px-4">
       <style jsx>{`
         .underline-custom {
             position: relative;
@@ -19,8 +19,8 @@ const Contact = () => {
             background-color: #149ddd; /* Change the color of the line */
         }`}
       </style>
-      <h2 className="mt-5 ml-4 text-2xl font-semibold"><span class="underline-custom">Conta</span>ct</h2>
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full max-w-lg text-center">
+      <h2 className="flex justify-center text-4xl font-bold text-gray-800 top-5 relative"><span class="underline-custom">Conta</span>ct</h2>
+      <div className="flex justify-center flex-col items-center mt-20 ml-90 h-125 w-150 bg-white shadow-lg rounded-lg text-center">
         {/* Title */}
         <h2 className="text-2xl font-semibold text-brown-700 mb-4">Get in Touch</h2>
 

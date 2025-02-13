@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-import assets from '../assets/assets'
 
 const Portfolio = () => {
   const images = [
     { src: "/image1.jpg", title: "First slide label", text: "Some representative placeholder content for the first slide." },
     { src: "/image2.jpg", title: "Second slide label", text: "Some representative placeholder content for the second slide." },
     { src: "/image3.jpg", title: "Third slide label", text: "Some representative placeholder content for the third slide." },
+  
   ];
 
   const Carousel = () => {
@@ -22,17 +22,14 @@ const Portfolio = () => {
     };
 
     return (
-      <div className="flex flex-col items-center justify-center w-full h-screen bg-gray-500">
-        {/* Title */}
-        <h2 className="text-4xl font-bold text-gray-800 mb-8 relative">
+      <div className="w-screen h-screen bg-red-100">
+      <h2 className="flex justify-center text-4xl font-bold text-gray-800 mb-8 relative top-5">
           <span className="relative">
-            Portfo<span className="text-blue-500">lio</span>
+            Port
             <span className="absolute left-0 bottom-[-5px] w-full h-1 bg-blue-500"></span>
-          </span>
+          </span>folio
         </h2>
-
-        {/* Carousel */}
-        <div className="relative w-full max-w-5xl h-[60vh] md:h-[70vh] overflow-hidden rounded-lg shadow-lg">
+        <div className="flex justify-center flex-col content-center ml-40 relative w-full max-w-5xl h-130 overflow-hidden rounded-lg shadow-lg bg-white">
           {/* Slides */}
           {images.map((image, index) => (
             <motion.div
@@ -43,8 +40,8 @@ const Portfolio = () => {
               className={`absolute inset-0 w-full h-full ${index === current ? "block" : "hidden"}`}
             >
               <img src={image.src} alt={image.title} className="w-full h-full object-cover rounded-lg" />
-              <div className="absolute bottom-5 left-5 bg-black bg-opacity-60 text-white p-4 rounded-md">
-                <h5 className="text-lg font-bold">{image.title}</h5>
+              <div className="flex flex-col justify-center align-center ml-80 mb-6 absolute bottom-5 left-5">
+                <h5 className="ml-27 text-lg font-bold">{image.title}</h5>
                 <p className="text-sm">{image.text}</p>
               </div>
             </motion.div>
@@ -77,7 +74,7 @@ const Portfolio = () => {
             <FaChevronRight className="w-5 h-5" />
           </button>
         </div>
-      </div>
+        </div>
     );
   };
 

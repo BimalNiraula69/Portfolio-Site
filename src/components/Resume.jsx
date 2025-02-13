@@ -23,7 +23,7 @@ const Resume = () => {
             background-color: #149ddd; /* Change the color of the line */
         }
         `}</style>
-    <h2 className="mt-5 ml-4 text-2xl font-semibold"><span class="underline-custom">Resu</span>me</h2>
+    <h2 className="flex justify-center text-4xl font-bold text-gray-800 mb-8 relative top-5"><span class="underline-custom">Resu</span>me</h2>
       <div class="container mx-auto py-5 px-5">
         <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-2xl overflow-hidden">
             <div class="p-4 sm:p-6">
