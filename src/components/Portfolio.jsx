@@ -21,31 +21,28 @@ const Portfolio = () => {
     };
 
     return (
-      <div className="w-screen h-screen bg-[#F5F3FF]">
-        <h2 className="flex justify-center text-4xl font-bold text-gray-800 mb-8 relative top-5">
-          <span className="relative">
-            Port
-            <span className="absolute left-0 bottom-[-5px] w-full h-1 bg-blue-500"></span>
-          </span>folio
+      <div className="bg-[#F5F3FF] min-h-screen w-full flex flex-col items-center justify-center overflow-auto p-6">
+        <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
+          <span className="underline-custom">Port</span>folio
         </h2>
-        <div className="flex justify-center flex-col content-center relative w-full max-w-5xl h-130 overflow-hidden rounded-lg shadow-lg bg-white mx-auto px-4 sm:px-6 lg:px-8">
-                {images.map((image, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: index === current ? 0 : 100 }}
-                  animate={{ opacity: index === current ? 1 : 0, x: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className={`absolute inset-0 w-full h-full ${index === current ? "block" : "hidden"}`}
-                >
-                  <img src={image.src} alt={image.title} className="w-full h-full object-cover rounded-lg mb-16" />
-                  <div className="flex flex-col justify-center align-center absolute bottom-16 left-5 sm:left-10 lg:left-20">
-                  <h5 className="text-lg font-bold">{image.title}</h5>
-                  <p className="text-sm">{image.text}</p>
-                  </div>
-                </motion.div>
-                ))}
+        <div className="relative w-full max-w-5xl h-[70vh] flex items-center justify-center bg-white rounded-lg shadow-lg overflow-hidden p-6">
+          {images.map((image, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: index === current ? 0 : 100 }}
+              animate={{ opacity: index === current ? 1 : 0, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className={`absolute inset-0 w-full h-full flex flex-col items-center justify-center ${index === current ? "block" : "hidden"}`}
+            >
+              <img src={image.src} alt={image.title} className="w-full h-full object-cover rounded-lg" />
+              <div className="absolute bottom-10 text-center text-white bg-black bg-opacity-50 px-4 py-2 rounded">
+                <h5 className="text-lg font-bold">{image.title}</h5>
+                <p className="text-sm">{image.text}</p>
+              </div>
+            </motion.div>
+          ))}
 
-                {/* Indicators */}
+          {/* Indicators */}
           <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex gap-3">
             {images.map((_, index) => (
               <button
@@ -72,6 +69,22 @@ const Portfolio = () => {
             <FaChevronRight className="w-5 h-5" />
           </button>
         </div>
+
+        <style jsx>{`
+          .underline-custom {
+            position: relative;
+            display: inline-block;
+          }
+          .underline-custom::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 100%;
+            height: 3px;
+            background-color: #149ddd;
+          }
+        `}</style>
       </div>
     );
   };
