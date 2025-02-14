@@ -3,7 +3,7 @@ import assets from '../assets/assets'
 
 const About = () => {
   return (
-    <div className='bg-[#F5F3FF] relative w-screen min-h-screen flex flex-col items-center justify-start p-4 sm:p-8'>
+    <div className='bg-[#F5F3FF] relative w-screen h-auto flex flex-col items-center justify-start p-4 sm:p-8'>
       {/* Title positioned same as Resume */}
       <h2 className="text-4xl font-bold text-gray-800 mt-8 sm:mt-12">
         <span className="underline-custom">Abo</span>ut

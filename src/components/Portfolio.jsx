@@ -21,7 +21,7 @@ const Portfolio = () => {
     };
 
     return (
-      <div className="bg-[#F5F3FF] min-h-screen w-full flex flex-col items-center justify-center overflow-auto p-6">
+      <div className="bg-[#F5F3FF] h-auto w-full flex flex-col items-center justify-center overflow-auto p-6">
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
           <span className="underline-custom">Port</span>folio
         </h2>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
   return (
-    <div className="bg-[#F5F3FF] w-screen h-screen flex flex-col items-center justify-center p-4">
+    <div className="bg-[#F5F3FF] w-screen h-auto flex flex-col items-center justify-center p-4">
       {/* Title */}
       <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
         <span className="underline-custom">Cont</span>act
