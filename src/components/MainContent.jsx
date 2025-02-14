@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import assets from "../assets/assets";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaBars } from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const MainContent = () => {
   const [text] = useTypewriter({
@@ -10,12 +10,6 @@ const MainContent = () => {
     typeSpeed: 120,
     deleteSpeed: 80,
   });
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <div className="relative w-screen h-screen">
@@ -32,19 +26,12 @@ const MainContent = () => {
       </video>
 
       {/* Navigation */}
-      <nav className="absolute top-0 w-full flex justify-between items-center bg-transparent p-4">
-        <div className="text-white text-lg font-bold">Logo</div>
-        <div className="md:hidden">
-          <FaBars className="text-white w-6 h-6 cursor-pointer" onClick={toggleMenu} />
-        </div>
-        <div className={`w-full md:flex md:items-center md:justify-center md:space-x-4 lg:space-x-6 ${isMenuOpen ? 'block' : 'hidden'} md:block`}>
-          <a href="#" className="block md:inline-block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Resume</a>
-          <a href="#" className="block md:inline-block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Portfolio</a>
-          <a href="#" className="block md:inline-block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Services</a>
-          <a href="#" className="block md:inline-block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Posts</a>
-          <a href="#" className="block md:inline-block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">About</a>
-          <a href="#" className="block md:inline-block rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Contact</a>
-        </div>
+      <nav className="absolute top-0 w-full flex justify-center items-center bg-transparent p-4 space-x-2 sm:space-x-4 md:space-x-6">
+        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Resume</a>
+        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Portfolio</a>
+        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Services</a>
+        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">About</a>
+        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Contact</a>
       </nav>
 
       {/* Centered Content */}
