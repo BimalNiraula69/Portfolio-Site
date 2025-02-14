@@ -20,10 +20,29 @@ const Services = () => {
         "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
       image: "/product-design.png",
     },
+    {
+      title: "PRODUCT DESIGN",
+      description:
+        "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
+      image: "/product-design.png",
+    },
+    {
+      title: "PRODUCT DESIGN",
+      description:
+        "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
+      image: "/product-design.png",
+    },
+    {
+      title: "PRODUCT DESIGN",
+      description:
+        "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
+      image: "/product-design.png",
+    },
   ];
+
   return (
-    <div className='bg-[#F5F3FF] relative w-screen h-auto flex flex-col justify-around items-center'>
-      <h2 className="text-4xl font-bold text-gray-800 mb-8">
+    <div className='bg-[#F5F3FF] relative w-screen h-auto flex flex-col justify-between items-center py-10 px-4'>
+      <h2 className="text-4xl font-bold text-gray-800 mb-8 h-full flex items-center">
         <span className="underline-custom">Servi</span>ces
       </h2>
       <style jsx>{`
@@ -41,30 +60,22 @@ const Services = () => {
           background-color: #149ddd; /* Change the color of the line */
         }
       `}</style>
-      <div className="text-white flex flex-col justify-around items-center w-full h-full">
-        {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl px-4">
+      <div className="text-white flex flex-col justify-evenly items-center w-full h-full overflow-x-auto">
+        <div className="grid grid-cols-6 gap-4 w-full max-w-full px-4">
           {services.map((service, index) => (
             <div
               key={index}
-              className="relative bg-gray-900 p-6 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center max-w-xs mx-auto"
+              className="relative bg-gray-900 p-4 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center min-w-[150px]"
             >
-              {/* Title */}
-              <h2 className="text-2xl font-bold text-lime-400">{service.title}</h2>
-
-              {/* Image */}
-              <div className="w-40 h-40 my-6">
+              <h2 className="text-xl font-bold text-lime-400">{service.title}</h2>
+              <div className="w-32 h-32 my-4">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-contain"
                 />
               </div>
-
-              {/* Description */}
               <p className="text-gray-400 text-sm">{service.description}</p>
-
-              {/* Arrow Indicator */}
               <div className="absolute bottom-2 right-4 text-lime-400 text-xl">
                 →
               </div>

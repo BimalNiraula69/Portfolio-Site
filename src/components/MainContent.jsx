@@ -27,10 +27,10 @@ const MainContent = () => {
 
       {/* Navigation */}
       <nav className="absolute top-0 w-full flex justify-center items-center bg-transparent p-4 space-x-2 sm:space-x-4 md:space-x-6">
+        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">About</a>
         <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Resume</a>
         <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Portfolio</a>
         <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Services</a>
-        <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">About</a>
         <a href="#" className="rounded-md px-2 py-1 text-xs sm:text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white cursor-pointer">Contact</a>
       </nav>
 
