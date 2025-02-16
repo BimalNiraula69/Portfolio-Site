@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
   return (
-    <div className="bg-[#F5F3FF] h-auto w-full flex flex-col items-center justify-center overflow-auto p-6">
+    <div className="bg-[#F5F3FF] h-auto w-full flex flex-col items-center justify-center overflow-auto">
       <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
         <span className="underline-custom">Resu</span>me
       </h2>

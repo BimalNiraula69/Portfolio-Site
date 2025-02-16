@@ -3,9 +3,9 @@ import assets from '../assets/assets'
 
 const About = () => {
   return (
-    <div className='bg-[#F5F3FF] relative w-screen h-auto flex flex-col items-center justify-start p-4 sm:p-8'>
+  <div className='bg-[#F5F3FF] relative w-screen h-auto flex flex-col items-center justify-start p-6'>
       {/* Title positioned same as Resume */}
-      <h2 className="text-4xl font-bold text-gray-800 mt-8 sm:mt-12">
+      <h2 className="text-4xl font-bold text-gray-800 mb-6">
         <span className="underline-custom">Abo</span>ut
       </h2>
 
@@ -26,7 +26,7 @@ const About = () => {
       `}</style>
 
       {/* Content Container - Adjusted to avoid overlapping */}
-      <div className="flex flex-col sm:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-2xl rounded-lg p-6 mt-10 sm:mt-12">
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-2xl rounded-lg p-6">
         <img
           className="h-32 w-32 sm:h-64 sm:w-64 rounded-full object-cover mx-auto sm:mr-8"
           src={assets.bimal}
