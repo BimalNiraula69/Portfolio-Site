@@ -26,7 +26,7 @@ const Portfolio = () => {
         <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
           <span className="underline-custom">Port</span>folio
         </h2>
-        <div className="relative w-full max-w-5xl h-[88vh] flex items-center justify-center bg-white rounded-lg shadow-lg overflow-hidden p-6">
+        <div className="relative w-full max-w-5xl h-[50vh] flex items-center justify-center bg-white rounded-lg shadow-lg overflow-hidden p-6">
           {images.map((image, index) => (
             <motion.div
               key={index}
