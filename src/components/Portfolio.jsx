@@ -35,7 +35,7 @@ const Portfolio = () => {
               transition={{ duration: 0.5 }}
               className={`absolute inset-0 w-full h-full flex flex-col items-center justify-center ${index === current ? "block" : "hidden"}`}
             >
-              <img src={image.src} alt={image.title} className="w-full h-full object-cover rounded-lg" />
+              <img src={image.src} alt={image.title} className="w-full h-full rounded-lg" />
               <div className="absolute bottom-10 text-center text-Black bg-opacity-50 px-4 py-2 rounded">
                 <h5 className="text-lg font-bold hover:cursor-pointer">{image.title}</h5>
                 <p className="text-sm hover:cursor-pointer">{image.text}</p>
