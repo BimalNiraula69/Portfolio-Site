@@ -9,7 +9,7 @@ const Contact = () => {
       </h2>
 
       {/* Main Contact Container */}
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-xl rounded-lg overflow-hidden">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-xl rounded-lg overflow-hidden mb-15">
         {/* Left Section */}
         <div className="flex flex-col justify-center space-y-4 w-full md:w-1/2 text-center md:text-left p-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
@@ -28,19 +28,19 @@ const Contact = () => {
           <h3 className="text-lg md:text-xl font-semibold text-gray-800">Send us a message 🚀</h3>
           <form className="mt-4 space-y-4">
             <div className="relative">
-              <input type="text" id="fullname" className="input-field" placeholder="Full Name" required />
+              <input type="text" id="fullname" className="input-field" required />
               <label htmlFor="fullname" className="input-label">Full Name</label>
             </div>
             <div className="relative">
-              <input type="email" id="email" className="input-field" placeholder="Email" required />
+              <input type="email" id="email" className="input-field" required />
               <label htmlFor="email" className="input-label">Email</label>
             </div>
             <div className="relative">
-              <input type="text" id="subject" className="input-field" placeholder="Subject" required />
+              <input type="text" id="subject" className="input-field" required />
               <label htmlFor="subject" className="input-label">Subject</label>
             </div>
             <div className="relative">
-              <textarea id="message" className="input-field" placeholder="Tell us more about your project*" required></textarea>
+              <textarea id="message" className="input-field" required></textarea>
               <label htmlFor="message" className="input-label">Message</label>
             </div>
             <button type="submit" className="w-full p-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700">

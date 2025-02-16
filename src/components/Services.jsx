@@ -76,9 +76,6 @@ const Services = () => {
               />
             </div>
             <p className="text-gray-400 text-sm">{service.description}</p>
-            <div className="absolute bottom-2 right-4 text-lime-400 text-xl">
-              →
-            </div>
           </div>
         ))}
       </div>
