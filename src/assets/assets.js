@@ -6,7 +6,9 @@ import post from './post.png';
 import responsible from './responsible.png';
 import resume from './resume.png';
 import animated_video from './animated_video.mp4';
+import a from './a.png';
 const assets ={
+    a,
     bimal,
     contact_us,
     information_button,

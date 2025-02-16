@@ -5,7 +5,7 @@ import assets from "../assets/assets";
 
 const Portfolio = () => {
   const images = [
-    { src: assets.bimal, title: "slide label", text: "Some representative placeholder content for the slide." },
+    { src: assets.a, title: "slide label", text: "Some representative placeholder content for the slide." },
     { src: "/image1.jpg", title: "slide label", text: "Some representative placeholder content for the slide." },
     { src: "/image1.jpg", title: "slide label", text: "Some representative placeholder content for the slide." },
   ];

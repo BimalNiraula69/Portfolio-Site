@@ -28,7 +28,7 @@ const About = () => {
       {/* Content Container - Adjusted to avoid overlapping */}
       <div className="flex flex-col sm:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-2xl rounded-lg p-6">
         <img
-          className="h-32 w-32 sm:h-64 sm:w-64 rounded-full object-cover mx-auto sm:mr-8"
+          className="h-full w-full sm:h-64 sm:w-64 object-content object-cover mx-auto sm:mr-8"
           src={assets.bimal}
           alt="Profile"
         />
