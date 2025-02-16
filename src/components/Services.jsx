@@ -65,7 +65,7 @@ const Services = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="flex-none bg-gray-900 m-4 p-4 mt-6 pb-6 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center w-full md:w-1/3 lg:w-1/4"
+            className="flex-none bg-gray-900 m-4 p-4 mt-6 pb-6 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center w-11/12 sm:w-5/12 md:w-1/3 lg:w-1/4 h-80"
           >
             <h2 className="text-xl font-bold text-lime-400">{service.title}</h2>
             <div className="w-32 h-32 my-4">
