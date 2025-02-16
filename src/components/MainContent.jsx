@@ -21,8 +21,8 @@ const MainContent = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" 
       >
-        <source src={assets.animated_video} type="video/mp4" />
-        Your browser does not support the video tag.
+        <source src={assets.animatedVideo} type="video/mp4" />
+        <div className='text-dark-700'>Your browser does not support the video tag.</div>
       </video>
 
       <nav className="absolute top-0 left-0 w-full bg-transparent z-50">
@@ -41,7 +41,7 @@ const MainContent = () => {
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-5">
-        <img src={assets.bimal} alt="Profile" className="w-26 h-26 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full" />
+        <img src={assets.bimalniraula} alt="Profile" className="w-26 h-26 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full mb-1" />
         <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 my-3">
           <FaFacebookF className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
           <FaGithub className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
