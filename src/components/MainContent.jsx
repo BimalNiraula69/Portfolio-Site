@@ -19,26 +19,25 @@ const MainContent = () => {
         loop 
         muted 
         playsInline
-        classNameName="absolute top-0 left-0 w-full h-full object-cover z-[-1]" 
+        className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" 
       >
         <source src={assets.animated_video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Navigation */}
-      <nav class="absolute top-0 left-0 w-full bg-transparent z-50">
-    <div class="container mx-auto px-4">
-      <div class="flex justify-center items-center py-4">
-        <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-center">
-          <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">About</a></li>
-          <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Resume</a></li>
-          <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Portfolio</a></li>
-          <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Services</a></li>
-          <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <nav className="absolute top-0 left-0 w-full bg-transparent z-50">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-center items-center py-4">
+            <ul className="flex flex-row space-x-4 text-center">
+              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">About</a></li>
+              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Resume</a></li>
+              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Portfolio</a></li>
+              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Services</a></li>
+              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-5">
@@ -55,7 +54,7 @@ const MainContent = () => {
           <span><Cursor cursorStyle='|' /></span>
         </p>
       </div>
-       <style jsx>{`
+      <style jsx>{`
         .underline-custom {
           position: relative;
           display: inline-block;
@@ -69,11 +68,11 @@ const MainContent = () => {
           height: 3px;
           background-color: #149ddd;
         }
-          .nav-item:hover {
-      text-decoration: underline;
-      text-decoration-color: #149ddd;
-      text-underline-offset: 8px;
-    }
+        .nav-item:hover {
+          text-decoration: underline;
+          text-decoration-color: #149ddd;
+          text-underline-offset: 8px;
+        }
       `}</style>
     </div>
   );
