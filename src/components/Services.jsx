@@ -7,37 +7,37 @@ const Services = () => {
       title: "WEB DESIGN",
       description:
         "Crafting stunning and functional websites tailored to your brand’s needs. Our web design services blend creativity with user experience to deliver captivating online experiences.",
-      image: assets.bimal,
+      image: assets.web_design,
     },
     {
       title: "LOGO DESIGN",
       description:
         "Crafting memorable brand identities through timeless logo design. I specialize in creating logos that resonate with your audience and represent your brand.",
-      image: "/logo-design.png",
+      image: assets.logo,
     },
     {
       title: "PRODUCT DESIGN",
       description:
         "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
-      image: "/product-design.png",
+      image: assets.product,
     },
     {
-      title: "PRODUCT DESIGN",
+      title: "Web Development",
       description:
-        "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
-      image: "/product-design.png",
+        "Cutting-edge web development solutions that blend aesthetics with performance. From sleek user interfaces to seamless functionality, we craft websites and applications that engage, convert, and inspire.",
+      image: assets.web_development,
     },
     {
-      title: "PRODUCT DESIGN",
+      title: "Dabtabase Administration",
       description:
-        "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
-      image: "/product-design.png",
+        "Reliable and efficient database administration services that ensure data integrity, security, and performance. From optimization to backup strategies, we manage your databases with precision and expertise.",
+      image: assets.database_management,
     },
     {
-      title: "PRODUCT DESIGN",
+      title: "Software Testing",
       description:
-        "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
-      image: assets.bimal,
+        "Reliable and efficient software testing solutions to ensure flawless performance. From functional testing to automation, we help deliver high-quality, bug-free software with precision and expertise.",
+      image: assets.testing,
     },
   ];
 

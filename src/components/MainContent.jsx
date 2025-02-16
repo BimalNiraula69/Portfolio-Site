@@ -19,9 +19,10 @@ const MainContent = () => {
         loop 
         muted 
         playsInline
+        preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover z-[-1]" 
       >
-        <source src={assets.animatedVideo} type="video/mp4" />
+        <source src={assets.animated_video} type="video/mp4" />
         <div className='text-dark-700'>Your browser does not support the video tag.</div>
       </video>
 
