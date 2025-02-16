@@ -41,7 +41,7 @@ const Services = () => {
   ];
 
   return (
-    <div className='bg-[#F5F3FF] relative w-screen h-auto flex flex-col justify-between items-center py-10 px-4'>
+    <div className='bg-[#F5F3FF] relative w-screen min-h-screen flex flex-col justify-between items-center py-10 px-4'>
       <h2 className="text-4xl font-bold text-gray-800 mb-8 h-full flex items-center">
         <span className="underline-custom">Servi</span>ces
       </h2>
@@ -60,28 +60,27 @@ const Services = () => {
           background-color: #149ddd; /* Change the color of the line */
         }
       `}</style>
-      <div className="text-white flex flex-col justify-evenly items-center w-full h-full overflow-x-auto">
-        <div className="grid grid-cols-6 gap-4 w-full max-w-full px-4">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="relative bg-gray-900 p-4 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center min-w-[150px]"
-            >
-              <h2 className="text-xl font-bold text-lime-400">{service.title}</h2>
-              <div className="w-32 h-32 my-4">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <p className="text-gray-400 text-sm">{service.description}</p>
-              <div className="absolute bottom-2 right-4 text-lime-400 text-xl">
-                →
-              </div>
+
+      <div className="text-white flex flex-wrap justify-center w-full h-full">
+        {services.map((service, index) => (
+          <div
+            key={index}
+            className="flex-none bg-gray-900 m-4 p-4 rounded-xl border border-gray-700 shadow-lg text-center flex flex-col items-center w-full md:w-1/3 lg:w-1/4"
+          >
+            <h2 className="text-xl font-bold text-lime-400">{service.title}</h2>
+            <div className="w-32 h-32 my-4">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-contain"
+              />
             </div>
-          ))}
-        </div>
+            <p className="text-gray-400 text-sm">{service.description}</p>
+            <div className="absolute bottom-2 right-4 text-lime-400 text-xl">
+              →
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
