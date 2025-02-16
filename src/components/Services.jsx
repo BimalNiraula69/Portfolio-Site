@@ -37,7 +37,7 @@ const Services = () => {
       title: "PRODUCT DESIGN",
       description:
         "Innovative product design solutions that marry form with function. From concept to prototype, we bring your ideas to life with precision and creativity.",
-      image: "/product-design.png",
+      image: assets.bimal,
     },
   ];
 

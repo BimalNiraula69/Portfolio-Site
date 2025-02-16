@@ -9,7 +9,7 @@ const Contact = () => {
       </h2>
 
       {/* Main Contact Container */}
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-xl rounded-lg overflow-hidden mb-15">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-5xl bg-white shadow-xl rounded-lg overflow-hidden mb-6">
         {/* Left Section */}
         <div className="flex flex-col justify-center space-y-4 w-full md:w-1/2 text-center md:text-left p-4">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
