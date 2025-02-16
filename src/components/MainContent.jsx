@@ -41,11 +41,11 @@ const MainContent = () => {
 
       {/* Centered Content */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-5">
-        <img src={assets.bimal} alt="Profile" className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full mb-4" />
+        <img src={assets.bimal} alt="Profile" className="w-26 h-26 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full" />
         <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 my-3">
-          <FaLinkedinIn className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
-          <FaGithub className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
           <FaFacebookF className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
+          <FaGithub className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
+          <FaLinkedinIn className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
         </div>
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">Bimal Niraula</h1>
         <p className="text-white text-lg sm:text-xl mt-2">
