@@ -26,7 +26,7 @@ const Portfolio = () => {
       <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
         <span className="underline-custom">Port</span>folio
       </h2>
-      <div className="relative w-full max-w-5xl h-[60vh] md:h-[80vh] flex items-center justify-center bg-white rounded-lg shadow-lg overflow-hidden p-6">
+      <div className="relative w-full max-w-5xl h-[75vh] flex items-center justify-center bg-white rounded-lg shadow-lg overflow-hidden p-6">
         {images.map((image, index) => (
         <motion.div
           key={index}
@@ -35,7 +35,7 @@ const Portfolio = () => {
           transition={{ duration: 0.5 }}
           className={`absolute inset-0 w-full h-full flex flex-col items-center justify-center ${index === current ? "block" : "hidden"}`}
         >
-          <img src={image.src} alt={image.title} className="w-full h-full rounded-lg" />
+          <img src={image.src} alt={image.title} className="w-full h-full object-contain rounded-lg"/>
           <div className="absolute bottom-10 text-center text-Black bg-opacity-50 px-4 py-2 rounded">
           <h5 className="text-lg font-bold hover:cursor-pointer">{image.title}</h5>
           <p className="text-sm hover:cursor-pointer">{image.text}</p>
