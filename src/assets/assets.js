@@ -6,7 +6,7 @@ import database_management from './database_management.jpg';
 import logo from './logo.jpg';
 import product from './product.jpg';
 import testing from './testing.jpg';
-import web_design from './web_design.jpeg';
+import web_design from './web_design.jpg';
 import web_development from './web_development.jpg';
 
 const assets ={
