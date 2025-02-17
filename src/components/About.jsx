@@ -36,23 +36,23 @@ const About = () => {
           <div>
             <h1 className="text-xl font-bold">UI/UX Designer & Web Developer</h1>
             <p className="text-sm text-gray-600 mt-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            As a passionate Web Developer and UI/UX Designer, I create visually stunning and user-friendly digital experiences that seamlessly blend functionality with aesthetics.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5">
-            <p className="text-gray-800"><strong>➤ Birthday:</strong> 1 May 1995</p>
-            <p className="text-gray-800"><strong>➤ Age:</strong> 30</p>
+            <p className="text-gray-800"><strong>➤ Birthday:</strong> 15 August 2001</p>
+            <p className="text-gray-800"><strong>➤ Age:</strong> 23</p>
             <p className="text-gray-800"><strong>➤ Website:</strong> www.example.com</p>
-            <p className="text-gray-800"><strong>➤ Degree:</strong> Master</p>
-            <p className="text-gray-800"><strong>➤ Phone:</strong> +123 456 7890</p>
-            <p className="text-gray-800"><strong>➤ Email:</strong> email@example.com</p>
-            <p className="text-gray-800"><strong>➤ City:</strong> New York, USA</p>
+            <p className="text-gray-800"><strong>➤ Degree:</strong> Bachelor</p>
+            <p className="text-gray-800"><strong>➤ Phone:</strong> +977 9804354440</p>
+            <p className="text-gray-800"><strong>➤ Email:</strong> bimalniraula69@gmail.com</p>
+            <p className="text-gray-800"><strong>➤ City:</strong> Itahari, Nepal</p>
             <p className="text-gray-800"><strong>➤ Freelance:</strong> Available</p>
           </div>
 
           <p className="text-gray-600 mt-5">
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut.
+          With a strong focus on responsive design, performance, and intuitive user interactions, I craft websites that not only look great but also enhance user engagement and accessibility.
           </p>
         </div>
       </div>

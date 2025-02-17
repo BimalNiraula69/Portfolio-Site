@@ -2,6 +2,7 @@ import React from 'react';
 import assets from "../assets/assets";
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const MainContent = () => {
   const [text] = useTypewriter({
@@ -30,11 +31,11 @@ const MainContent = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-center items-center py-4">
             <ul className="flex flex-row space-x-4 text-center">
-              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">About</a></li>
-              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Resume</a></li>
-              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Portfolio</a></li>
-              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Services</a></li>
-              <li><a href="#" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Contact</a></li>
+              <li><Link to="/about" className="nav-item text-white hover:text-[#149ddd] transition duration-300">About</Link></li>
+              <li><Link to="/resume" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Resume</Link></li>
+              <li><Link to="/portfolio" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Portfolio</Link></li>
+              <li><Link to="/services" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Services</Link></li>
+              <li><Link to="/contact" className="nav-item text-white hover:text-[#149ddd] transition duration-300">Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -44,9 +45,9 @@ const MainContent = () => {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-5">
         <img src={assets.bimalniraula} alt="Profile" className="w-26 h-26 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full mb-1" />
         <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-5 my-3">
-          <FaFacebookF className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
-          <FaGithub className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
-          <FaLinkedinIn className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" />
+       <Link to="https://www.facebook.com/profile.php?id=61571313576365"><FaFacebookF className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" /></Link>
+       <Link to="https://github.com/BimalNiraula69?tab=repositories"><FaGithub className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" /></Link>
+       <Link to="https://www.linkedin.com/in/bimal-niraula-44573b351/"><FaLinkedinIn className="cursor-pointer w-5 h-5 sm:w-6 sm:h-6" /></Link>
         </div>
         <h1 className="text-white text-3xl sm:text-4xl md:text-5xl font-bold">Bimal Niraula</h1>
         <p className="text-white text-lg sm:text-xl mt-2">

@@ -6,17 +6,17 @@ const Resume = () => {
       <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">
         <span className="underline-custom">Resu</span>me
       </h2>
-      <div className="max-w-5xl w-full h-auto bg-white rounded-lg shadow-2xl flex flex-col">
+      <div className="max-w-5xl w-full h-auto bg-white rounded-lg shadow-2xl flex flex-col mb-6">
         <div className="p-6 flex-grow">
           <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
             <div>
-              <h2 className="text-2xl font-semibold">John Doe</h2>
-              <p className="text-sm text-gray-600">Senior Software Engineer</p>
+              <h2 className="text-2xl font-semibold">Bimal Niraula</h2>
+              <p className="text-sm text-gray-600">Senior Web Developer</p>
             </div>
             <div className="text-sm text-gray-600 mt-4 sm:mt-0">
-              <p>Phone: (123) 456-7890</p>
-              <p>Email: john.doe@example.com</p>
-              <p>Location: San Francisco, CA</p>
+              <p>Phone: +977 9804354440</p>
+              <p>Email: bimalniraula69@gmail.com</p>
+              <p>Location: Itahari, Nepal</p>
             </div>
           </div>
           
@@ -25,8 +25,8 @@ const Resume = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Summary</h3>
             <p className="text-sm leading-relaxed">
-              Results-oriented Senior Software Engineer with 20 years of experience designing, developing, and deploying
-              complex software solutions. Proficient in a variety of programming languages and technologies. Proven track
+              Results-oriented Senior Web Developer with 20 years of experience designing, developing, and deploying
+              complex Web solutions. Proficient in a variety of programming languages and technologies. Proven track
               record of leading teams and delivering high-quality products.
             </p>
           </div>
@@ -35,7 +35,7 @@ const Resume = () => {
             <h3 className="text-lg font-semibold mb-2">Experience</h3>
             <div>
               <h4 className="text-md font-semibold">ABC Corporation</h4>
-              <p className="text-sm text-gray-600">Senior Software Engineer | 2015 - Present</p>
+              <p className="text-sm text-gray-600">Senior Web Developer | 2025 - Present</p>
               <ul className="list-disc list-inside text-sm">
                 <li>Lead a team of developers in designing and implementing a scalable microservices architecture.</li>
                 <li>Developed and maintained critical components of the company's flagship product.</li>
@@ -44,9 +44,9 @@ const Resume = () => {
             </div>
             <div className="mt-4">
               <h4 className="text-md font-semibold">XYZ Tech</h4>
-              <p className="text-sm text-gray-600">Software Engineer | 2008 - 2015</p>
+              <p className="text-sm text-gray-600">Web Developer | 2020 - 2025</p>
               <ul className="list-disc list-inside text-sm">
-                <li>Contributed to the development of a cutting-edge mobile application, used by millions worldwide.</li>
+                <li>Contributed to the development of a cutting-edge web application, used by millions worldwide.</li>
                 <li>Implemented CI/CD pipelines, improving team efficiency and product quality.</li>
                 <li>Mentored junior engineers and conducted code reviews.</li>
               </ul>

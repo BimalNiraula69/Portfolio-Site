@@ -42,7 +42,7 @@ const Services = () => {
   ];
 
   return (
-    <div className='bg-[#F5F3FF] relative w-screen min-h-screen flex flex-col justify-between items-center'>
+    <div className='bg-[#F5F3FF] relative w-screen min-h-screen flex flex-col justify-between items-center overflow-x-hidden'>
       <h2 className="text-4xl font-bold text-gray-800 h-full flex items-center mb-4">
         <span className="underline-custom">Servi</span>ces
       </h2>
