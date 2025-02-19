@@ -25,7 +25,7 @@ const Resume = () => {
           <div>
             <h3 className="text-lg font-semibold mb-2">Summary</h3>
             <p className="text-sm leading-relaxed">
-              Results-oriented Senior Web Developer with 20 years of experience designing, developing, and deploying
+              Results-oriented Senior Web Developer with 10 years of experience designing, developing, and deploying
               complex Web solutions. Proficient in a variety of programming languages and technologies. Proven track
               record of leading teams and delivering high-quality products.
             </p>
