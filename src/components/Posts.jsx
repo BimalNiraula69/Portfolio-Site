@@ -54,8 +54,8 @@ const Posts = () => {
       </div>
 
       {/* Posts Section */}
-      <div className="min-h-full flex flex-col items-center h-full pt-34 px-2">
-        <div className="w-full max-w-lg space-y-4">
+      <div className="min-h-full flex flex-col items-center h-auto pt-34 px-2">
+        <div className="h-auto w-full max-w-lg space-y-4">
           {adminPosts.map((post) => (
             <div key={post.id} className="bg-white p-4 rounded-lg shadow-md">
               <div className="flex items-center space-x-3">
