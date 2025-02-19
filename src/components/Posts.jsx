@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'; 
-import { FaFilePdf, FaFileVideo, FaRegThumbsUp, FaRegComment, FaRegShareSquare } from "react-icons/fa";
+import React, { useState, useEffect } from 'react';
+import { FaRegThumbsUp, FaRegComment, FaRegShareSquare } from "react-icons/fa";
+import assets from '../assets/assets';
 
 const Posts = () => {
   const [adminPosts, setAdminPosts] = useState([]);
@@ -9,16 +10,15 @@ const Posts = () => {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const fetchedPosts = [
-        {
-          id: 1,
-          user: "Admin",
-          time: "3 days ago",
-          content: "Just a simple text post with no attachments.",
-          likes: 10,
-          comments: [],
-        }
-      ];
+      const fetchedPosts = Array(8).fill({
+        id: Math.random(), // Ensure unique ID for each post
+        user: "Admin",
+        time: "3 days ago",
+        content: "Just a simple text post with no attachments.",
+        likes: 10,
+        comments: [],
+      });
+
       setAdminPosts(fetchedPosts);
       setLikes(fetchedPosts.reduce((acc, post) => ({ ...acc, [post.id]: post.likes }), {}));
       setComments(fetchedPosts.reduce((acc, post) => ({ ...acc, [post.id]: post.comments }), {}));
@@ -42,11 +42,25 @@ const Posts = () => {
   };
 
   return (
-    <div className='relative w-screen h-auto bg-gray-100'>
-      <h2 className="ml-4 text-2xl font-semibold text-center pt-6 mb-6"><span className="underline-custom">Pos</span>ts</h2>
+    <div className="relative w-full h-auto bg-gray-100 overflow-x-hidden">
+      
+      {/* Navbar */}
+      <div
+        className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-lg text-white p-4 rounded-lg shadow-xl z-50"
+        style={{
+          backgroundImage: `url(${assets.himalaya})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h2 className="ml-4 text-2xl font-semibold text-center">
+          <span className="underline-custom">Pos</span>ts
+        </h2>
+      </div>
 
-      <div className="min-h-screen flex flex-col items-center p-4">
-        <div className="h-auto w-full max-w-lg mt-4 space-y-4">
+      {/* Posts Section */}
+      <div className="min-h-full flex flex-col items-center h-full pt-19 px-2">
+        <div className="w-full max-w-lg space-y-4">
           {adminPosts.map((post) => (
             <div key={post.id} className="bg-white p-4 rounded-lg shadow-md">
               <div className="flex items-center space-x-3">
@@ -55,6 +69,7 @@ const Posts = () => {
               </div>
               <p className="mt-3">{post.content}</p>
 
+              {/* Buttons */}
               <div className="flex justify-between mt-3 text-gray-600">
                 <button className="flex items-center space-x-1 hover:text-blue-500" onClick={() => handleLike(post.id)}>
                   <FaRegThumbsUp /> <span>{likes[post.id]} Likes</span>
@@ -67,6 +82,7 @@ const Posts = () => {
                 </button>
               </div>
 
+              {/* Comment Section */}
               <div className="mt-3">
                 <input
                   type="text"
@@ -83,6 +99,7 @@ const Posts = () => {
                 </button>
               </div>
 
+              {/* Display Comments */}
               {comments[post.id].length > 0 && (
                 <div className="mt-3">
                   {comments[post.id].map((comment, index) => (
@@ -94,6 +111,23 @@ const Posts = () => {
           ))}
         </div>
       </div>
+
+      {/* Custom Underline Style */}
+      <style jsx>{`
+        .underline-custom {
+          position: relative;
+          display: inline-block;
+        }
+        .underline-custom::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 100%;
+          height: 3px;
+          background-color: #149ddd;
+        }
+      `}</style>
     </div>
   );
 };

@@ -8,8 +8,10 @@ import product from './product.jpg';
 import testing from './testing.jpg';
 import web_design from './web_design.jpg';
 import web_development from './web_development.jpg';
+import himalaya from './himalaya.jpeg'
 
 const assets ={
+    himalaya,
     a,
     bimal,
     bimalniraula,
