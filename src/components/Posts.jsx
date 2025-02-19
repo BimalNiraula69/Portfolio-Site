@@ -45,21 +45,16 @@ const Posts = () => {
     <div className="relative w-full h-auto bg-gray-100 overflow-x-hidden">
       
       {/* Navbar */}
-      <div
-        className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-lg text-white p-4 rounded-lg shadow-xl z-50"
+      <div className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-lg p-15 rounded-lg shadow-xl z-50"
         style={{
           backgroundImage: `url(${assets.himalaya})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-        }}
-      >
-        <h2 className="ml-4 text-2xl font-semibold text-center">
-          <span className="underline-custom">Pos</span>ts
-        </h2>
+        }}>
       </div>
 
       {/* Posts Section */}
-      <div className="min-h-full flex flex-col items-center h-full pt-19 px-2">
+      <div className="min-h-full flex flex-col items-center h-full pt-34 px-2">
         <div className="w-full max-w-lg space-y-4">
           {adminPosts.map((post) => (
             <div key={post.id} className="bg-white p-4 rounded-lg shadow-md">
@@ -111,23 +106,6 @@ const Posts = () => {
           ))}
         </div>
       </div>
-
-      {/* Custom Underline Style */}
-      <style jsx>{`
-        .underline-custom {
-          position: relative;
-          display: inline-block;
-        }
-        .underline-custom::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          bottom: -5px;
-          width: 100%;
-          height: 3px;
-          background-color: #149ddd;
-        }
-      `}</style>
     </div>
   );
 };
